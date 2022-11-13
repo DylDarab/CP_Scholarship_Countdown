@@ -186,7 +186,7 @@ const App = () => {
           <Text sx={titleText}>CP Scholarship Countdown</Text>
           <Text sx={dateText}>
             <Flex sx={countdownFlex}>
-              <Text width="156px" alignItems="center">
+              <Text width="100px" alignItems="center">
                 Fastest<chakra.span color="orange"> :</chakra.span>{' '}
               </Text>
               <Countdown
@@ -196,7 +196,7 @@ const App = () => {
             </Flex>
             <br />
             <Flex sx={countdownFlex}>
-              <Text width="156px" alignItems="center">
+              <Text width="100px" alignItems="center">
                 Latest<chakra.span color="orange"> :</chakra.span>{' '}
               </Text>
               <Countdown date={getScholarshipDateLatest} renderer={renderer} />
