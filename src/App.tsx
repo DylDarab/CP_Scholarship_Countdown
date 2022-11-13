@@ -31,7 +31,7 @@ const App = () => {
   const titleText = {
     color: 'white',
     fontWeight: 'bold',
-    fontSize: '32px',
+    fontSize: '28px',
     lineHeight: '1.5',
     padding: '2px 8px',
     backgroundColor: 'orange',
@@ -45,13 +45,13 @@ const App = () => {
   const dateText = {
     color: 'white',
     fontWeight: 'bold',
-    fontSize: '28px',
+    fontSize: '24px',
     lineHeight: '0.9',
   }
 
   const wordText = {
     color: 'white',
-    fontSize: '28px',
+    fontSize: '24px',
     lineHeight: '1.2',
   }
 
