@@ -28,11 +28,10 @@ const App = () => {
     justifyContent: 'center',
   }
 
-
   const titleText = {
     color: 'white',
     fontWeight: 'bold',
-    fontSize: '36px',
+    fontSize: '32px',
     lineHeight: '1.5',
     padding: '2px 8px',
     backgroundColor: 'orange',
@@ -46,10 +45,10 @@ const App = () => {
   const dateText = {
     color: 'white',
     fontWeight: 'bold',
-    fontSize: '36px',
+    fontSize: '28px',
     lineHeight: '0.9',
   }
- 
+
   const wordText = {
     color: 'white',
     fontSize: '28px',
@@ -59,6 +58,9 @@ const App = () => {
   const jobText = {
     color: 'white',
     fontSize: '32px',
+  }
+
+  const countdownFlex = {
   }
 
   const cursorKeyframe = keyframes`
@@ -107,7 +109,8 @@ const App = () => {
         <span>
           {days}d<chakra.span color="orange">-</chakra.span>
           {hours}h<chakra.span color="orange">-</chakra.span>
-          {minutes}m
+          {minutes}m<chakra.span color="orange">-</chakra.span>
+          {seconds}s
         </span>
       )
     }
@@ -179,10 +182,10 @@ const App = () => {
   return (
     <>
       <Box sx={layout}>
-        <VStack width="50%" alignItems="center">
+        <VStack width="80%" alignItems="center" minWidth='300px'>
           <Text sx={titleText}>CP Scholarship Countdown</Text>
           <Text sx={dateText}>
-            <Flex>
+            <Flex sx={countdownFlex}>
               <Text width="156px" alignItems="center">
                 Fastest<chakra.span color="orange"> :</chakra.span>{' '}
               </Text>
@@ -192,7 +195,7 @@ const App = () => {
               />
             </Flex>
             <br />
-            <Flex>
+            <Flex sx={countdownFlex}>
               <Text width="156px" alignItems="center">
                 Latest<chakra.span color="orange"> :</chakra.span>{' '}
               </Text>
